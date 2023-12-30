@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navbar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+    <style>
+      .navbar {
+    width: 100%;
+    height: auto;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 800px;
+}
+
+button {
+    height: 35px;
+    width: 65px;
+}
+
+.navbar div {
+    padding: 10px 20px;
+}
+
+div :hover { 
+    background-color: rgb(35, 35, 96);
+    transition-duration: 0.4s;
+}
+
+.fa {
+    margin-left: 7px;
+}
+
+.more {
+    position: relative;
+}
+.submanu {
+    position: absolute;
+    text-align: center;
+    width: 115px;
+    height: 150px;
+    left: 0px;
+    margin-top: 9%;
+    background-color: blue;
+    display: none;
+}
+.more:hover .submanu {
+    display: block;
+    background-color: blue;
+}
+
+.menu1 {
+    position: absolute;
+    background-color: blue;
+    width: 93px;
+    left: 155px;
+    top: 120px;
+    display: none;
+}
+
+.menu1 div {
+    padding: 10px 20px;
+    text-align: center;
+}
+.dpdn:hover .menu1 {
+    display:block;
+}
+
+ </style>
+</head>
+<body>
+    <div class="navbar">
+        <div><a href="#">Logo</a></div>
+        <div>Home</div>
+        <div>About</div>
+        <div class="more">Services<i class="fa fa-caret-down"></i>
+        <div class="submanu">
+            <div>Web design</div>
+            <div>Marketing</div>
+            <div>WordPress</div>
+            <div class="dpdn">More <i class="fa fa-caret-right"></i>
+            <div class="menu1">
+                <div>HTML</div>
+                <div>CSS</div>
+                <div>javascript</div>
+                <div>jQuery</div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div>Blogs</div>
+        <div>Contect</div>
+        <button>Login</button>
+        
+    </div>
+</body>
+</html>
